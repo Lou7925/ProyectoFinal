@@ -20,6 +20,7 @@ from django.conf.urls.static import static
 from proyecto_web_servicios import views
 
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home,name="home"),
@@ -28,7 +29,8 @@ urlpatterns = [
     path('iniciarsesion/',views.iniciar_sesion,name="iniciarsesion"),
     path('quienes_somos/',views.quienes_somos,name="quienes_somos"),
     path('buscar/',views.buscar,name="buscar"),
-]
+
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
