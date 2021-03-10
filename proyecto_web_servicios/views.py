@@ -28,3 +28,6 @@ def iniciar_sesion(request):
 
 def quienes_somos(request):
     return render(request,"quienes_somos.html")
+
+def registro_exitoso(request):
+    return render(request,"registro_exitoso.html")
