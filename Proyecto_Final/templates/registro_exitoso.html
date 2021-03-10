@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% block title %} Registro exitoso {% endblock %}{% block content %}
+
+<div class="d-flex justify-content-center align-items-center container "></div>
+        <div class="row ">
+            <form>
+                <html>
+                <head>
+                <div class="alert alert-primary" role="alert">
+                 <p>Excelente! El registro fue exitoso,podes volver a la pagina principal e iniciar sesion desde este  <a class="nav-link" href="{% url 'iniciarsesion' %}" class="alert-link">LINK</a></p>
+                </div>
+                </head>
+                </html>
+
+{%endblock%}

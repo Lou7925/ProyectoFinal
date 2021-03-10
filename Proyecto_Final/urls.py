@@ -29,6 +29,7 @@ urlpatterns = [
     path('iniciarsesion/',views.iniciar_sesion,name="iniciarsesion"),
     path('quienes_somos/',views.quienes_somos,name="quienes_somos"),
     path('buscar/',views.buscar,name="buscar"),
+    path('registro_exitoso/',views.registro_exitoso,name="registro_exitoso"),
 
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
